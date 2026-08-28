@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "tavily-api-key",
+      "description": "Tavily API key",
+      "password": true
+    }
+  ],
+  "servers": {
+    "tavily": {
+      "type": "http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=${input:tavily-api-key}"
+    }
+  }
+}
